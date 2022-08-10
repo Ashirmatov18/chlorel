@@ -1,0 +1,16 @@
+.appbar {
+  /* position: fixed; */
+  position: fixed;
+}
+
+.list_order {
+  list-style-type: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.list_name {
+  font-size: 30px;
+}
