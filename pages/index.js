@@ -4,6 +4,9 @@ import styles from "../styles/Home.module.css";
 import MainPage from "../src/MainPage/MainPage.jsx";
 import Navbar from "../src/Navbar/Navbar";
 import Info from "../src/Info/Info";
+import Footer from "../src/Footer/Footer";
+import Parallaxx from "../src/Parallax/Parallaxx";
+import Documents from "../src/Documents/Documents";
 
 export default function Home() {
   return (
@@ -17,10 +20,14 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar />
         <MainPage />
-        <Info />
-      </main>
 
-      <footer className={styles.footer}></footer>
+        <Info />
+        <Parallaxx />
+        <Documents />
+      </main>
+      <footer className={styles.footer}>
+        <Footer />
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.content {
+  height: 100vh;
+}
+
+.parallax_main {
+  margin: 0 -2rem;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.par_image {
+  background-image: url("../public/images/first.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+}
+
+.par_image_second {
+  background-image: url("../public/images/main.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+}
+
+.fullpage_section {
+  height: 100vh !important;
+}

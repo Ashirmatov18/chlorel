@@ -24,7 +24,7 @@
 }
 
 .container_solid {
-  background: white;
+  /* background: white; */
   /* hide fixed overflow contents */
   clip: rect(0, auto, auto, 0);
 
@@ -84,7 +84,7 @@
 
 .container_image {
   /* Grab a free image from unsplash */
-  background-image: url("../public/images/main.jpg");
+  background-image: url("../public/images/para.jpg");
   background-size: 100vw auto;
   background-position: center;
   background-attachment: fixed;
