@@ -54,7 +54,7 @@ export default function Documents() {
         <h1>Сертификаты и Документы</h1>
       </div>
 
-      <div classname={styles.wrappper}>
+      <div className={styles.wrappper}>
         <div className={styles.residents} data-aos="fade-up">
           {!!certifacetes?.length &&
             certifacetes.map(({ title, image }) => (
@@ -71,7 +71,7 @@ export default function Documents() {
         </div>
       </div>
 
-      <div classname={styles.wrappper}>
+      <div className={styles.wrappper}>
         <div className={styles.residents} data-aos="fade-up">
           {!!documents?.length &&
             documents.map(({ title, image }) => (
