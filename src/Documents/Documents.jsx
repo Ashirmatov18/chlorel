@@ -58,7 +58,7 @@ export default function Documents() {
         <div className={styles.residents} data-aos="fade-up">
           {!!certifacetes?.length &&
             certifacetes.map(({ title, image }) => (
-              <div style={{ marginRight: "15px" }}>
+              <div key={Math.random()} style={{ marginRight: "15px" }}>
                 <div
                   style={{ backgroundImage: `url(${image})` }}
                   className={styles.first_res}
@@ -75,7 +75,7 @@ export default function Documents() {
         <div className={styles.residents} data-aos="fade-up">
           {!!documents?.length &&
             documents.map(({ title, image }) => (
-              <div style={{ marginRight: "15px" }}>
+              <div key={Math.random()} style={{ marginRight: "15px" }}>
                 <div
                   style={{ backgroundImage: `url(${image})` }}
                   className={styles.first_res}
