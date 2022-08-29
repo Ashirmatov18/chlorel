@@ -1,0 +1,225 @@
+.main_guides {
+  background-image: url("../public/images/para.jpg");
+  height: 322px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.about_title {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  padding-top: 160px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1280px;
+}
+
+.search {
+  width: 326.26px;
+  height: 36.26px;
+  background: #323232;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding-left: 20px;
+  color: #828282;
+  border: none;
+  position: relative;
+}
+
+.search_icon {
+  position: absolute;
+  right: 34px;
+  margin-top: 7px;
+}
+
+.main_search {
+  display: flex;
+  justify-content: end;
+  padding: 0 20px;
+  padding-top: 20px !important;
+}
+
+.kyrgyzstan {
+  padding-top: 50px;
+}
+
+.kyrgyzstan span {
+  color: #333333;
+  font-size: 50px;
+}
+
+.kyrgyzstan p {
+  color: #2f2f2f;
+  font-size: 24px;
+}
+
+.person_cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.persons {
+  width: 386px;
+  height: 560px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.first_per {
+  /* background-image: url("../public/images/hotel.jpg"); */
+  width: 386.14px;
+  height: 284px;
+}
+
+.person_info {
+  padding: 0 30px;
+}
+
+.per_social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.per_mobile {
+  display: flex;
+  align-items: center;
+}
+
+.social_media {
+  margin-right: 10px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  font-size: 17px;
+  color: #2f2f2f;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(207, 201, 201, 0.893);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.guides {
+  position: relative;
+}
+
+.main {
+  text-align: center;
+  margin-top: 30px;
+}
+.flex_row {
+  justify-content: left;
+  display: flex;
+  padding-top: 20px;
+}
+
+.clicked {
+  border: 5px solid black;
+}
+
+.main_carousel {
+  width: 1240px;
+  height: 658px;
+  border-radius: 20px;
+}
+
+.mini_carousel {
+  width: 147.15px;
+  height: 155px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.controllers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.next_prev {
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.but_group {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.but_filter {
+  width: 216px;
+  height: 50px;
+  /* background: #f2f2f260; */
+  background-color: rgb(40, 163, 40);
+  border-radius: 15px;
+  border: greenyellow solid;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.but_filter:hover {
+  color: white;
+  background-color: #d4d1d1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .persons:nth-child(3n + 2) {
+    transform: unset !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .person_cards {
+    justify-content: center;
+    margin-bottom: 30px !important;
+    margin-top: 30px;
+  }
+
+  .about_title {
+    font-size: 50px;
+  }
+  .but_group {
+    justify-content: space-around;
+  }
+  .kyrgyzstan {
+    padding-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main_search {
+    margin-top: 450px !important;
+  }
+  .but_filter {
+    width: 106px;
+  }
+  .person_cards {
+    margin-top: 50px;
+  }
+}

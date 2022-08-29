@@ -56,3 +56,64 @@ export default function Parallaxx() {
     </>
   );
 }
+
+{
+  /* <div className={styles.person_cards}>
+{!!filtered?.length &&
+  filtered.map(({ title, image }) => (
+    <div key={Math.random()}>
+      <div
+        className={styles.flip_card_container}
+        style={{ hue: "220" }}
+      >
+        <div className={styles.flip_card}>
+          <div className={styles.card_front}>
+            <figure>
+              <div className={styles.img_bg}></div>
+              <div
+                style={{
+                  backgroundImage: `url(${image})`,
+                  width: "300px",
+                  height: "300px",
+                }}
+              ></div>
+            </figure>
+
+            <ul>
+              <li>{title}</li>
+            </ul>
+          </div>
+
+          <div className={styles.card_back}>
+            <figure>
+              <div className={styles.img_bg}></div>
+              <div
+                style={{
+                  backgroundImage: `url(${image})`,
+                  width: "300px",
+                  height: "300px",
+                }}
+              ></div>
+            </figure>
+
+            <button>Купить</button>
+            <h1>Algalive: курс на 14 дней</h1>
+            <span>520 сом</span>
+
+            <div className={styles.design_container}>
+              <span className={styles.design__1}></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div> */
+}
