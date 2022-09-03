@@ -73,7 +73,7 @@
   background-position: center;
 
   /* clip the text is possible */
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -84,7 +84,7 @@
 
 .container_image {
   /* Grab a free image from unsplash */
-  background-image: url("../public/images/para.jpg");
+  background-image: url("/images/para.jpg");
   background-size: 100vw auto;
   background-position: center;
   background-attachment: fixed;
