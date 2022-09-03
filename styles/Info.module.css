@@ -84,7 +84,8 @@
 
 .container_image {
   /* Grab a free image from unsplash */
-  background-image: url("../public/images/underwater-2966572_1280.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.5)),
+    url("/images/underwater-2966572_1280.jpg");
   background-size: 100vw auto;
   background-position: center;
   background-attachment: fixed;
