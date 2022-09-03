@@ -20,7 +20,7 @@
   width: 100%;
 
   /* safari hack */
-  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  /* -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%); */
 }
 
 .container_solid {
@@ -40,7 +40,7 @@
   width: 100%;
 
   /* safari hack */
-  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  /* -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%); */
   /* position this container at the top of its parent element */
   top: 0;
 }
@@ -103,7 +103,7 @@
   width: 100%;
 
   /* safari hack */
-  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+  /* -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%); */
   /* position the second container below the first container */
   top: 100vh;
 }
