@@ -84,13 +84,14 @@
 
 .container_image {
   /* Grab a free image from unsplash */
-  background-image: url("/images/para.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../public/images/underwater-2966572_1280.jpg");
   background-size: 100vw auto;
   background-position: center;
   background-attachment: fixed;
   /* hide fixed overflow contents */
   clip: rect(0, auto, auto, 0);
-
+  /*  */
   /* does not work if overflow = visible */
   overflow: hidden;
 
