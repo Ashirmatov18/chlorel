@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lobster&display=swap");
 
 .back_image {
-  background-image: url("/images/1.jpg");
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.5)),
+    url("/images/1.jpg");
   height: 76vh;
   width: 95vw;
   border-radius: 13px;
