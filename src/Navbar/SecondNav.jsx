@@ -10,6 +10,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import Tooltip from "@material-ui/core/Tooltip";
 import MenuItem from "@material-ui/core/MenuItem";
+import Link from "next/link";
 
 const pages = ["Продукты", "Новости"];
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -34,27 +35,38 @@ const SecondNav = () => {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "black" }}>
+    <AppBar
+      position="static"
+      style={{
+        backgroundColor: "#228B22",
+        position: "fixed",
+      }}
+    >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          style={{ display: "flex", justifyContent: "space-between" }}
+        >
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
+          <Link href="/" style={{ textDecoration: "none", color: "white" }}>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              Хлорелла
+            </Typography>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -85,26 +97,34 @@ const SecondNav = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
+              {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
-              ))}
+              ))} */}
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            <Link href="/news">
               <Button
-                key={page}
                 onClick={handleCloseNavMenu}
                 style={{ color: "white" }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                Новинки
               </Button>
-            ))}
+            </Link>
+            <Link href="/product">
+              <Button
+                onClick={handleCloseNavMenu}
+                style={{ color: "white", marginLeft: "30px" }}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Продукты
+              </Button>
+            </Link>
           </Box>
 
           {/* <Box sx={{ flexGrow: 0 }}>
