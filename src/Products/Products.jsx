@@ -111,11 +111,11 @@ export default function Products() {
           {!!filtered?.length &&
             filtered.map(({ title, image }) => (
               <div key={Math.random()}>
-                <div class="flip-card-container">
-                  <div class="flip-card">
-                    <div class="card-front">
-                      <figure class="figure">
-                        <div class="img-bg"></div>
+                <div className="flip-card-container">
+                  <div className="flip-card">
+                    <div className="card-front">
+                      <figure className="figure">
+                        <div className="img-bg"></div>
                         <div
                           style={{
                             backgroundImage: `url(${image})`,
@@ -125,14 +125,14 @@ export default function Products() {
                         ></div>
                       </figure>
 
-                      <ul class="list-style">
+                      <ul className="list-style">
                         <li>{title}</li>
                       </ul>
                     </div>
 
-                    <div class="card-back">
+                    <div className="card-back">
                       <figure>
-                        <div class="img-bg"></div>
+                        <div className="img-bg"></div>
                         <div
                           style={{
                             backgroundImage: `url(${image})`,
@@ -142,21 +142,21 @@ export default function Products() {
                         ></div>
                       </figure>
 
-                      <div class="back-info">
+                      <div className="back-info">
                         <h1>{title}</h1>
                         <span>520 сом</span>
-                        <button class="button">Купить</button>
+                        <button className="button">Купить</button>
                       </div>
 
-                      <div class="design-container">
-                        <span class="design design--1"></span>
-                        <span class="design design--2"></span>
-                        <span class="design design--3"></span>
-                        <span class="design design--4"></span>
-                        <span class="design design--5"></span>
-                        <span class="design design--6"></span>
-                        <span class="design design--7"></span>
-                        <span class="design design--8"></span>
+                      <div className="design-container">
+                        <span className="design design--1"></span>
+                        <span className="design design--2"></span>
+                        <span className="design design--3"></span>
+                        <span className="design design--4"></span>
+                        <span className="design design--5"></span>
+                        <span className="design design--6"></span>
+                        <span className="design design--7"></span>
+                        <span className="design design--8"></span>
                       </div>
                     </div>
                   </div>
