@@ -3,6 +3,7 @@
   position: fixed;
   /* height: 80px; */
   /* background-color: #f1ebe7; */
+  margin-bottom: 100px;
 }
 
 .list_order {
@@ -11,6 +12,8 @@
   display: flex;
   justify-content: space-between;
   width: 90vw;
+  --def: #fff;
+  --inv: #085f63;
 }
 
 .list_name {
@@ -22,7 +25,7 @@
   transform: translate(-50%, -50%);
   padding: 12px 48px;
   color: #ffffff;
-  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background: linear-gradient(to right, #085f63 0, white 10%, #085f63 20%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,4 +47,68 @@
   100% {
     background-position: 250px;
   }
+}
+
+/* ~~~~~~~ INIT. Button ~~~~~~~ */
+
+.button {
+  position: relative;
+  font-size: 1.1rem;
+  color: var(--inv);
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+  padding: 1rem 2.2rem;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.button:hover {
+  color: var(--def);
+  transition-delay: 0.5s;
+}
+
+.button:hover:before {
+  transition-delay: 0s;
+}
+
+.button:hover:after {
+  background: var(--inv);
+  transition-delay: 0.35s;
+}
+
+.button:before {
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 0;
+  border: 1px solid var(--inv);
+  border-left: 0;
+  border-right: 0;
+}
+
+.button:after {
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: var(--inv);
+}
+
+.button:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+.button:hover:after {
+  top: 0;
+  height: 100%;
 }

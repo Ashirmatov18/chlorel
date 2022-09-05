@@ -13,12 +13,18 @@ export default function Navbar() {
             <li className={styles.list_name}>Живая Хлорелла</li>
           </Link>
           <Link href="/product">
-            <li style={{ textDecoration: "none", cursor: "pointer" }}>
+            <li
+              className={styles.button}
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
               Продукты
             </li>
           </Link>
           <Link href="/news">
-            <li style={{ textDecoration: "none", cursor: "pointer" }}>
+            <li
+              className={styles.button}
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
               Новинки
             </li>
           </Link>

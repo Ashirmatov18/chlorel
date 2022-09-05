@@ -38,7 +38,7 @@ const SecondNav = () => {
     <AppBar
       position="static"
       style={{
-        backgroundColor: "#228B22",
+        backgroundColor: "#4c9173",
         position: "fixed",
       }}
     >
