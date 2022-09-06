@@ -1,9 +1,10 @@
 .main_guides {
-  background-image: url("/images/para.jpg");
-  height: 322px;
+  background-image: url("/images/2.jpg");
+  height: 420px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+  /* background-position: center; */
 }
 
 .about_title {

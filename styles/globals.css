@@ -436,6 +436,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
 }
 
 .back-info h1 {
@@ -448,14 +449,4 @@ figcaption {
   margin: 0 auto;
   padding-bottom: 40px;
   font-size: 35px;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

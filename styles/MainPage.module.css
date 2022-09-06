@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lobster&display=swap");
+@import url("https://use.typekit.net/xkg8nbv.css");
 
 .back_image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.5)),
@@ -11,9 +12,12 @@
   background-position: center;
   text-align: center;
   padding-top: 120px;
-  font-size: 30px;
-  font-family: "Caveat", cursive;
+  font-size: 27px;
+  font-family: merriweather, serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 100px;
+  color: #ffffff;
 }
 
 .button {
@@ -33,7 +37,7 @@
   /* border: 1px solid rgba(22, 76, 167, 0.6); */
   border: 1px solid #2f4f4f;
   margin: 0 auto;
-  font-family: "Caveat", cursive;
+  font-family: merriweather, serif;
 }
 .button span {
   color: #2f4f4f;

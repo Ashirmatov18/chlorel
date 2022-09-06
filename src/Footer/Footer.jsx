@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 // import { LogoFooter } from "./FooterSvg";
 import { LogoFooter } from "./FooterSvg";
-import { Link } from "@material-ui/core/Link";
+// import { Link } from "@material-ui/core/Link";
 // import { Facebook, Insta, Whats } from "../OrderCars/OrderCarsSvg";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 // import Modal from "@material-ui/core/Modal";
 // import ScrollUpButton from "react-scroll-up-button";
 import styles from "../../styles/Footer.module.css";
+import ScrollUpButton from "react-scroll-up-button";
+import TelegramIcon from "@material-ui/icons/Telegram";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import Link from "next/link";
 
 export default function Footer() {
   const [open, setOpen] = useState(false);
@@ -16,6 +21,8 @@ export default function Footer() {
 
   return (
     <div>
+      <ScrollUpButton />
+
       {/* <ScrollUpButton /> */}
 
       {/* <div className={styles.footer_img} style={{ color: "#fff" }}>
@@ -42,57 +49,30 @@ export default function Footer() {
       </div> */}
       <footer className={styles.footer_info}>
         <div className={styles.main_wrapper}>
-          <div className={styles.footer_main} data-aos="fade-up">
-            <ul>
-              {/* <Link href="/" style={{ textDecoration: "none", color: "white" }}> */}
-              <li>Главная</li>
-              {/* </Link> */}
-              {/* <Link
-              href="/about"
-              style={{ textDecoration: "none", color: "white" }}
-            > */}
+          <div className={styles.footer_main}>
+            <ul className={styles.footer_pages}>
+              <Link href="/" style={{ textDecoration: "none", color: "white" }}>
+                <li>Главная</li>
+              </Link>
               <li>О нас</li>
-              {/* </Link> */}
-              {/* <Link
-              href="/kyrgyzstan"
-              style={{ textDecoration: "none", color: "white" }} */}
-              {/* > */}
-              {/* </Link> */}
+              <Link
+                href="/news"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <li>Новинки</li>
+              </Link>
 
-              {/* <Link
-              href="/cafe"
-              style={{ textDecoration: "none", color: "white" }}
-            > */}
-              {/* </Link>
-            <Link
-              href="/entert"
-              style={{ textDecoration: "none", color: "white" }}
-            > */}
-              <li>Новинки</li>
-              {/* </Link> */}
-              {/* <Link
-              href="/partners"
-              style={{ textDecoration: "none", color: "white" }}
-            > */}
-              <li>Продукты</li>
-              {/* </Link>
-            <Link
-              href="/news"
-              style={{ textDecoration: "none", color: "white" }}
-            > */}
-              {/* </Link> */}
+              <Link
+                href="/product"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <li>Продукты</li>
+              </Link>
             </ul>
           </div>
           <div className={styles.footer_last}>
-            <div></div>
             <div>
-              <p>ФХ “У Самвела”</p>
-            </div>
-            <div className={styles.phone_footer} style={{ fontSize: "20px" }}>
-              <p>+996 0779-22-55-17</p>
-            </div>
-            <div className={styles.phone_footer} style={{ fontSize: "20px" }}>
-              <p>+996 0779-22-55-17</p>
+              <p className={styles.logo_name}>ФХ “У Самвела”</p>
             </div>
             <div
               style={{
@@ -101,26 +81,29 @@ export default function Footer() {
                 width: "15vw",
               }}
             >
-              {/* <Link
-              target="_blank"
-              href="https://www.facebook.com/Tabiyatkg-105609372166838/"
-            > */}
-              <div className={styles.f}>{/* <Facebook /> */}</div>
-              {/* </Link> */}
+              <Link target="_blank" href="https://t.me/+LYY_eIf_7302OTdi">
+                <div className={styles.f}>
+                  <TelegramIcon />
+                </div>
+              </Link>
 
-              {/* <Link
-              target="_blank"
-              href="https://instagram.com/tabiyatkg?igshid=YmMyMTA2M2Y="
-            > */}
-              <div className={styles.i}>{/* <Insta /> */}</div>
-              {/* </Link> */}
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/chlorella_biostimulyator/"
+              >
+                <div className={styles.i}>
+                  <InstagramIcon />
+                </div>
+              </Link>
 
-              {/* <Link
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=996554160589"
-            > */}
-              <div className={styles.w}>{/* <Whats /> */}</div>
-              {/* </Link> */}
+              <Link
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=996779225517"
+              >
+                <div className={styles.w}>
+                  <WhatsAppIcon />
+                </div>
+              </Link>
             </div>
           </div>
         </div>

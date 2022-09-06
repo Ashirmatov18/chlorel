@@ -51,9 +51,9 @@ const images = [
 
 export default function Parallaxx() {
   return (
-    <>
+    <div className={styles.carousel}>
       <ImageGallery items={images} showPlayButton={false} />
-    </>
+    </div>
   );
 }
 
