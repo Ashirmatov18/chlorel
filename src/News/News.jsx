@@ -100,7 +100,7 @@ export default function News() {
       <div className={styles.conteiner}>
         {!!certifacetes?.length &&
           certifacetes.map(({ image, title }) => (
-            <div className={styles.card}>
+            <div key={Math.random()} className={styles.card}>
               <figure className={styles.card__thumb}>
                 {/* <div styles={{ backgroundImage: `url(${image})` }}></div> */}
                 <div className={styles.img}></div>
