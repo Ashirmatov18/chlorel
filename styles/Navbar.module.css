@@ -4,6 +4,7 @@
   /* height: 80px; */
   /* background-color: #f1ebe7; */
   margin-bottom: 100px;
+  margin-top: 20px;
 }
 
 .list_order {
@@ -111,4 +112,17 @@
 .button:hover:after {
   top: 0;
   height: 100%;
+}
+
+.burger_menu {
+  display: none !important;
+}
+
+@media only screen and (max-width: 950px) {
+  .button {
+    display: none;
+  }
+  .appbar {
+    margin-top: 40px;
+  }
 }

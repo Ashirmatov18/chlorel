@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React, { Suspense } from "react";
 import styles from "../../styles/Navbar.module.css";
-import Sidebar from "./Sidebar";
-// import { slide as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 
 export default function Navbar() {
   return (
@@ -30,6 +29,27 @@ export default function Navbar() {
           </Link>
         </ul>
       </div>
+      <Menu
+        pageWrapId={"page-wrap"}
+        outerContainerId={"outer-container"}
+        styles={{ display: "none" }}
+      >
+        <Link href="/">
+          <a id="home" className="menu-item" href="/">
+            Главная
+          </a>
+        </Link>
+        <Link href="/product">
+          <a id="about" className="menu-item" href="/about">
+            Продукты
+          </a>
+        </Link>
+        <Link href="/news">
+          <a id="contact" className="menu-item" href="/contact">
+            Новинки
+          </a>
+        </Link>
+      </Menu>
     </Suspense>
   );
 }

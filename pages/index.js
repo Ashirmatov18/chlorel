@@ -17,8 +17,8 @@ export default function Home() {
         {/* <link rel="icon" href="/public/images/first.jpg" /> */}
       </Head>
 
+      <Navbar />
       <main className={styles.main}>
-        <Navbar />
         <MainPage />
         <Info />
         <Parallaxx />

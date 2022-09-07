@@ -18,7 +18,7 @@ a {
 }
 
 .featured-slide {
-  border-color: red;
+  border-color: #085f63;
 }
 
 /* Position and sizing of burger button */
@@ -28,11 +28,14 @@ a {
   height: 30px;
   left: 36px;
   top: 36px;
+  /* color: #085f63 !important; */
+
+  display: none;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #085f63;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -42,13 +45,18 @@ a {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 34px;
+  width: 34px;
+  right: -10px !important;
+  top: 40px !important;
+  /* color: #085f63 !important; */
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #085f63;
+  width: 40px;
+  height: 40px;
 }
 
 /*
@@ -62,7 +70,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #f1ebe7;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -74,7 +82,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: #085f63;
   padding: 0.8em;
 }
 
@@ -449,4 +457,22 @@ figcaption {
   margin: 0 auto;
   padding-bottom: 40px;
   font-size: 35px;
+}
+
+@media only screen and (max-width: 900px) {
+  .bm-burger-button {
+    display: block;
+  }
+  .bm-menu {
+    margin: 0 -2rem;
+  }
+  .bm-item-list {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  .bm-item-list a {
+    padding-top: 30px;
+    cursor: pointer;
+  }
 }
